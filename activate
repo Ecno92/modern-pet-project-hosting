@@ -1,0 +1,7 @@
+export VULTR_API_KEY=""
+export VULTR_REGION="7"  # Amsterdam
+export VULTR_PLAN="201"  # 1CPU, 1024 RAM, 25GB SSD, $5
+export VULTR_BACKUPS="0"
+export VULTR_OS="215"  # Ubuntu 16.04
+export VULTR_BOOT_SCRIPT=""  # Can be found in the URL of the edit page of the VULTR Boot script.
+export DOCKER_MACHINE_NAME=""

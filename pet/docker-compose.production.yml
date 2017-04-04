@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web:
+    environment:
+      - HOST=subdomain.example.com:80
+      - CADDY_TLS_EMAIL=mail@example.com
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - caddy-storage:/root/.caddy
+    restart: always
+  python-app:
+    restart:
+      always
+volumes:
+  caddy-storage:

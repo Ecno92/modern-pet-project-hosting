@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    links:
+      - python-app
+  python-app:
+    image: citizenstig/httpbin
