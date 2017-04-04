@@ -2,7 +2,7 @@ version: '3'
 services:
   web:
     environment:
-      - HOST=subdomain.example.com:80
+      - HOST=subdomain.example.com
       - CADDY_TLS_EMAIL=mail@example.com
     ports:
       - "80:80"
