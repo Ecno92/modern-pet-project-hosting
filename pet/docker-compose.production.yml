@@ -11,7 +11,6 @@ services:
       - caddy-storage:/root/.caddy
     restart: always
   python-app:
-    restart:
-      always
+    restart: always
 volumes:
   caddy-storage:
